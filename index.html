@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase Posts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Manage Posts</h2>
+      <div>
+        <input type="number" id="postId" placeholder="Enter ID" />
+        <input type="text" id="postTitle" placeholder="Enter Title" />
+        <button class="add-btn" onclick="addPost()">Add Post</button>
+      </div>
+
+      <h3>All Posts</h3>
+      <div id="postsList"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
