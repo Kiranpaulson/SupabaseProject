@@ -28,7 +28,6 @@ async function addPost() {
     document.getElementById("postTitle").value = "";
     fetchPosts();
   } catch (error) {
-    console.error("Error adding post:", error);
   }
 }
 
