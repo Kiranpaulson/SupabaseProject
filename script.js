@@ -9,7 +9,7 @@ async function fetchPosts() {
     const posts = response.data || {};
     displayPosts(posts);
   } catch (error) {
-    console.error("Error fetching posts:in kevinbranch", error);
+    console.error("Error fetching posts:in kevinbra", error);
   }
 }
 
