@@ -9,7 +9,7 @@ async function fetchPosts() {
     const posts = response.data || {};
     displayPosts(posts);
   } catch (error) {
-    console.error("Error fetching posts:in kevinbra", error);
+    console.error("Error fetching posts:kiran branch", error);
   }
 }
 
@@ -26,12 +26,12 @@ async function addPost() {
   try {
     // 💬 Modified log message — same area as main branch edit
     await axios.post(api_url, { id, title });
-    console.log("📝 Post successfully added by Kevin's branch!");
+    console.log("📝 Post successfully added by Kiran's branch!");
     document.getElementById("postId").value = "";
     document.getElementById("postTitle").value = "";
     fetchPosts();
   } catch (error) {
-    console.error("Error while adding new post in Kiran branch:", error);
+    console.error("Error while adding new post in sachin branch:", error);
   }
 }
 
