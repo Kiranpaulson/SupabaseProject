@@ -18,16 +18,20 @@ async function addPost() {
   const title = document.getElementById("postTitle").value;
 
   if (!id || !title) {
-    alert("Please enter both ID and Title");
+    // ⚠️ Modified line to be different from main branch (will cause conflict)
+    alert("⚠️ Please fill in both the Post ID and Title before adding!");
     return;
   }
 
   try {
+    // 💬 Modified log message — same area as main branch edit
     await axios.post(api_url, { id, title });
+    console.log("📝 Post successfully added by Kiran's branch!");
     document.getElementById("postId").value = "";
     document.getElementById("postTitle").value = "";
     fetchPosts();
   } catch (error) {
+    console.error("Error while adding new post in Kiran branch:", error);
   }
 }
 
