@@ -31,7 +31,7 @@ async function addPost() {
     document.getElementById("postTitle").value = "";
     fetchPosts();
   } catch (error) {
-    console.error("Error while adding new post in Kiran branch:", error);
+    console.error("Error while adding new post in sachin branch:", error);
   }
 }
 
