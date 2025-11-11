@@ -26,7 +26,7 @@ async function addPost() {
   try {
     // 💬 Modified log message — same area as main branch edit
     await axios.post(api_url, { id, title });
-    console.log("📝 Post successfully added by Kiran's branch!");
+    console.log("📝 Post successfully added by dhoni's branch!");
     document.getElementById("postId").value = "";
     document.getElementById("postTitle").value = "";
     fetchPosts();
@@ -58,7 +58,7 @@ async function updatePost(key, oldData) {
     });
     fetchPosts();
   } catch (error) {
-    console.error("Error updating post:", error);
+    console.error("Error updating post by kiran paulson:", error);
   }
 }
 
