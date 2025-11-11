@@ -58,7 +58,7 @@ async function updatePost(key, oldData) {
     });
     fetchPosts();
   } catch (error) {
-    console.error("Error updating post:", error);
+    console.error("Error updating post by kiran paulson:", error);
   }
 }
 
