@@ -9,7 +9,7 @@ async function fetchPosts() {
     const posts = response.data || {};
     displayPosts(posts);
   } catch (error) {
-    console.error("Error fetching posts:", error);
+    console.error("Error fetching posts:kiran branch", error);
   }
 }
 
@@ -31,7 +31,7 @@ async function addPost() {
     document.getElementById("postTitle").value = "";
     fetchPosts();
   } catch (error) {
-    console.error("Error while adding new post in dhoni branch:", error);
+    console.error("Error while adding new post in sachin branch:", error);
   }
 }
 
