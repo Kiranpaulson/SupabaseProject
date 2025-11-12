@@ -43,7 +43,7 @@ async function deletePost(key) {
     console.error("Error deleting post:", error);
   }
 }
-
+console.log("kiran")
 async function updatePost(key, oldData) {
   const newTitle = prompt("Enter new title:", oldData.title);
 
