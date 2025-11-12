@@ -26,7 +26,7 @@ async function addPost() {
   try {
     // 💬 Modified log message — same area as main branch edit
     await axios.post(api_url, { id, title });
-    console.log("📝 Post successfully added by kevin paulson branch!");
+    console.log("📝 Post successfully added by kiran paulson branch!");
     document.getElementById("postId").value = "";
     document.getElementById("postTitle").value = "";
     fetchPosts();
