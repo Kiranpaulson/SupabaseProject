@@ -22,7 +22,7 @@ async function addPost() {
     alert("⚠️ Please fill in both the Post ID and Title before adding!");
     return;
   }
-  console.log("kevin")
+  console.log("kevinpaulson")
   try {
     // 💬 Modified log message — same area as main branch edit
     await axios.post(api_url, { id, title });
