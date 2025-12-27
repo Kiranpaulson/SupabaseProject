@@ -14,7 +14,7 @@ async function fetchPosts() {
 }
 
 async function addPost() {
-  const id = document.getElementById("postId").value;
+  const id = docusment.getElementById("postId").value;
   const title = document.getElementById("postTitle").value;
 
   if (!id || !title) {
@@ -22,7 +22,7 @@ async function addPost() {
     alert("⚠️ Please fill in both the Post ID and Title before adding!");
     return;
   }
-  console.log("kevinpaulson")
+  console.log("kiran")
   try {
     // 💬 Modified log message — same area as main branch edit
     await axios.post(api_url, { id, title });
